@@ -3,7 +3,6 @@
 
 */
 
-
 //creacion de rutas en la app
 const{ Router }= require('express');
 const { check } = require('express-validator');

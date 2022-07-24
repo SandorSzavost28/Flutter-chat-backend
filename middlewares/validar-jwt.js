@@ -15,9 +15,9 @@ const validarJWT = ( req, res, next ) => {
         });
     }
 
-
+    
+    //validar el token
     try {
-        //validar el token
         //extraer uid
         const { uid } = jwt.verify( token , process.env.JWT_KEY );
         req.uid = uid;
